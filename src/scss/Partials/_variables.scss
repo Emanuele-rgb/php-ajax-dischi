@@ -1,0 +1,15 @@
+$main-text-color: white;
+$main-background-color: #FFFFFF;
+$secondary-background-color: #FFE7D2;
+$button-color: #233569;
+$link-color: #2D75BB;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $main-text-color;
+}
