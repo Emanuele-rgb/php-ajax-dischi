@@ -20,3 +20,40 @@
   width: 50px;
   background-size: cover;
 }
+
+.main-content {
+  padding-left: 7%;
+  padding-right: 5%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.song {
+  width: 400px;
+  height: 500px;
+  border: 1px solid white;
+}
+.song img {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: block;
+  text-align: center;
+  max-height: 360px;
+  max-width: 350px;
+}
+
+.song-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.artist {
+  color: grey;
+}

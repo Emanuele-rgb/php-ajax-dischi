@@ -22,8 +22,6 @@
 
 include_once __DIR__ . '/src/php/songs.php';
 
-var_dump($songs);
-
  ?>
 
  <?php
@@ -31,10 +29,13 @@ var_dump($songs);
  foreach ($songs as $request) { ?>
 
    <div class="song">
-     <img src="<?php echo $img ?>" alt="image" />
-     <?php echo $request['title'] ?>
-     <?php echo $request['artist']  ?>
-     <?php echo $request['year']  ?>
+     <img src="<?php echo $request['img'] ?>" alt="image" />
+
+    <div class="song-text title"><?php echo $request['title'] ?></div>
+       <div class="song-text artist"><?php echo $request['artist']  ?></div>
+       <div class="song-text year"><?php echo $request['year']  ?></div>
+
+
    </div>
 
  <?php } ?>

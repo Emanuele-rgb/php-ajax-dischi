@@ -117,8 +117,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\mamp\htdocs\php-ajax-dischi\src\js\main.js */"./src/js/main.js");
-module.exports = __webpack_require__(/*! D:\mamp\htdocs\php-ajax-dischi\src\scss\main.scss */"./src/scss/main.scss");
+__webpack_require__(/*! D:\MAMP\htdocs\php-ajax-dischi\src\js\main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! D:\MAMP\htdocs\php-ajax-dischi\src\scss\main.scss */"./src/scss/main.scss");
 
 
 /***/ })
