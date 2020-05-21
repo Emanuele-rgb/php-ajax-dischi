@@ -94,7 +94,29 @@
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  console.log('Ciaooo');
+  var container = $('.main-content');
+  var source = $('#song-template').html();
+  var template = Handlebars.compile(source);
+  $.ajax({
+    url: 'http://localhost/php-ajax-dischi/src/php/songs-ajax.php',
+    method: 'GET',
+    success: function success(res) {
+      for (var i = 0; i < res.length; i++) {
+        var context = {
+          img: res[i].img,
+          title: res[i].title,
+          artist: res[i].artist,
+          year: res[i].year
+        };
+        console.log(output);
+        var output = template(context);
+        container.append(output);
+      }
+    },
+    error: function error() {
+      console.log('Errore chiamata');
+    }
+  });
 });
 
 /***/ }),

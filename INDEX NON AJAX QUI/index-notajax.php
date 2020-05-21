@@ -18,32 +18,34 @@
 </header>
 <main>
   <div class="main-content">
+<?php
 
+include_once __DIR__ . '/src/php/songs.php';
 
+ ?>
 
+ <?php
 
-<script id='song-template' type='text/x-handlebars-template'>
-
-
+ foreach ($songs as $request) { ?>
 
    <div class="song">
-     <img src="{{ img }}" alt="image" />
+     <img src="<?php echo $request['img'] ?>" alt="image" />
 
-    <div class="song-text title">{{ title }}</div>
-       <div class="song-text artist">{{ artist }}</div>
-       <div class="song-text year">{{ year }}</div>
+    <div class="song-text title"><?php echo $request['title'] ?></div>
+       <div class="song-text artist"><?php echo $request['artist']  ?></div>
+       <div class="song-text year"><?php echo $request['year']  ?></div>
+
+
    </div>
-   </script>
 
-
-
+ <?php } ?>
   </div>
 </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
 <script src="dist/js/main.js" charset="utf-8"></script>
-
   </body>
 </html>
